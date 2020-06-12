@@ -13,6 +13,8 @@ export class AppComponent  {
     enableEmptyCellDrop: true,
     pushItems: true,
     swap: true,
+    outerMargin: false,
+    mobileBreakpoint: 0,
     pushDirections: { north: true, east: true, south: true, west: true },
     resizable: { enabled: true },
     draggable: {
@@ -25,7 +27,7 @@ export class AppComponent  {
     displayGrid: DisplayGrid.Always,
     minCols: 50,
     maxCols: 50,
-    maxRows: 5000,
+    maxRows: 5000
   };
 
   innerGridOptions:GridsterConfig = {
@@ -34,6 +36,8 @@ export class AppComponent  {
     enableEmptyCellDrop: true,
     pushItems: true,
     swap: true,
+    outerMargin: false,
+    mobileBreakpoint: 0,
     pushDirections: { north: true, east: true, south: true, west: true },
     resizable: { enabled: true },
     draggable: {
@@ -46,7 +50,7 @@ export class AppComponent  {
     displayGrid: DisplayGrid.Always,
     minCols: 50,
     maxCols: 50,
-    maxRows: 5000,
+    maxRows: 5000
   };
 
   innerGridComponent: any;
