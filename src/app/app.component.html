@@ -1,7 +1,7 @@
-<gridster [options]="outerGridOptions" style="min-height: 100vh; width: 100%;">
-	<gridster-item [item]="{x:0,y:0,rows:52,cols:25}">
-		<gridster [options]="innerGridOptions" style="height: 100%; width: 100%;">
-			<gridster-item [item]="{x:0,y:0,rows:50,cols:45}">
+<gridster [options]="outerGridOptions" style="min-height: 100vh; width: 100%;border:2px solid black">
+	<gridster-item [item]="{x:5,y:2,rows:15,cols:25}">
+		<gridster [options]="innerGridOptions" style="width: 100%;border:2px solid black">
+			<gridster-item [item]="{x:5,y:2,rows:10,cols:40}"  style="border: 1px solid red">
 				<div>
 					<p> parent object width when grid initialized : {{parenObjectWidthOnGridInitialization}} </p>
 					<p> parent object width when outer grid item initialized :
